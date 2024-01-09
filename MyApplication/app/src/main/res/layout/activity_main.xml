@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inpWeightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inpHeightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/inpWeightID"
+        app:layout_constraintTop_toBottomOf="@+id/inpWeightID" />
+
+    <TextView
+        android:id="@+id/weightTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:autoText="false"
+        android:text="lbs"
+        app:layout_constraintBottom_toBottomOf="@+id/inpWeightID"
+        app:layout_constraintStart_toEndOf="@+id/inpWeightID"
+        app:layout_constraintTop_toTopOf="@+id/inpWeightID" />
+
+    <Button
+        android:id="@+id/MetricBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="US"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heightTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="in"
+        app:layout_constraintBottom_toBottomOf="@+id/inpHeightID"
+        app:layout_constraintStart_toEndOf="@+id/inpHeightID"
+        app:layout_constraintTop_toTopOf="@+id/inpHeightID"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <Button
+        android:id="@+id/calculateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="24dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/inpHeightID"
+        app:layout_constraintTop_toTopOf="@+id/inpWeightID" />
+
+    <TextView
+        android:id="@+id/resWightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/resHeightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resWightID" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpHeightID" />
+
+    <TextView
+        android:id="@+id/resWeightMetricID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="kg"
+        app:layout_constraintBottom_toBottomOf="@+id/resWightID"
+        app:layout_constraintStart_toEndOf="@+id/resWightID"
+        app:layout_constraintTop_toTopOf="@+id/resWightID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/resHeightMetricID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="cm"
+        app:layout_constraintBottom_toBottomOf="@+id/resHeightID"
+        app:layout_constraintStart_toEndOf="@+id/resHeightID"
+        app:layout_constraintTop_toTopOf="@+id/resHeightID"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
