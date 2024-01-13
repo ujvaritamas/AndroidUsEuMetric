@@ -79,12 +79,12 @@ public class MainActivity extends AppCompatActivity {
             tmpHight = Float.parseFloat(heightInpText.getText().toString());
         }
         if(ButtonUsOrEu.getText().equals("EU")){
-            weightResText.setText(Float.toString(Weight.convertToEU(tmpWeight)));
-            heightResText.setText(Float.toString(Height.convertToEU(tmpHight)));
-        }
-        else{
             weightResText.setText(Float.toString(Weight.convertToUs(tmpWeight)));
             heightResText.setText(Float.toString(Height.convertToUs(tmpHight)));
+        }
+        else{
+            weightResText.setText(Float.toString(Weight.convertToEU(tmpWeight)));
+            heightResText.setText(Float.toString(Height.convertToEU(tmpHight)));
         }
 
 
